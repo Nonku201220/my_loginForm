@@ -75,3 +75,14 @@
     }
     }
   
+      
+  @media screen and (max-width: 800px) {
+    .input {
+        margin-left: 5rem;
+        width: 64%;
+    }
+
+    .checkbox {
+        margin-left: 5rem;
+    }
+    }

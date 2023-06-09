@@ -9,7 +9,7 @@ export default function Logo() {
         <i className="ri-mickey-fill"></i>
         </div>
     </div>
-    <div className='title'>Minion</div>
+    <div className='title'>User</div>
     </>
   )
 }
