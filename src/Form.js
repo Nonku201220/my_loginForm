@@ -1,7 +1,18 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Form.css'
 
+
 const Form = () => {
+
+    const [isClicked, setIsClicked] = useState(false);
+
+    const handleClick = () => {
+      setIsClicked(true);
+      setTimeout(() => {
+        setIsClicked(false);
+      }, 2000);
+    };
+
   return (
     <form>
         <input type='text' className='input' placeholder='username'/>
@@ -13,9 +24,10 @@ const Form = () => {
         </div>
 
             <div className='sign-in-button'>
-                <a  className='sign-in'> Log In </a>
-                <p Forgot Password ></p>
-                <span Sign Up></span>
+                <a onClick={handleClick}  className='sign-in'> Log In </a>
+                {isClicked && 'You have Logged In '}
+                <p> Forgot Password | <span> Sign Up</span></p>   
+              
             </div>
     </form>
   )

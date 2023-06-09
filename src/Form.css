@@ -52,11 +52,18 @@
     width: 120px;
     padding: 0.3rem;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .sign-in:hover {
+    background-color: #9bd2b4;
   }
   
   .sign-in-button p {
     margin-top: 2rem;
     font-weight: 300;
+
   }
   
   .sign-in-button span {
